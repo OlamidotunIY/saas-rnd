@@ -3,10 +3,10 @@
 <html>
   <head>
     <title>{% block head_title %} Saas {% endblock head_title %}</title>
+    {% include 'base/css.html' %}
   </head>
   <body>
-    <h1>Hello world</h1>
-
-    {% block content %} {% endblock content %}
+    {% include 'nav/nav.html' %}
+    {% block content %} {% endblock content %} {% include 'base/js.html' %}
   </body>
 </html>
